@@ -1,0 +1,39 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.adriangraczyk.employeeservice"
+    },
+    "jhipsterVersion": "6.10.1",
+    "applicationType": "microservice",
+    "baseName": "employeeservice",
+    "packageName": "com.adriangraczyk.employeeservice",
+    "packageFolder": "com/adriangraczyk/employeeservice",
+    "serverPort": "8081",
+    "authenticationType": "jwt",
+    "cacheProvider": "no",
+    "enableHibernateCache": false,
+    "websocket": false,
+    "databaseType": "mongodb",
+    "devDatabaseType": "mongodb",
+    "prodDatabaseType": "mongodb",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "NWYxYWViYjBkM2E2ZWMwODEwNjVlMmU2M2NjYzhkNTgxZWEzZDUyZmJlOWRlYjkzNjc4MTJkZDBjOWU3MmJjMzBkYTcwYjQ0ODkyMTcxMTIxZDUzODNkYTk0ZTlhMzVhYjhlNzE5NWFkMjE5NDc5MmZiMGU2NzI4MWU1N2FkMjg=",
+    "embeddableLaunchScript": false,
+    "creationTimestamp": 1595269325696,
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": false,
+    "clientPackageManager": "npm",
+    "blueprints": [],
+    "reactive": true,
+    "skipClient": true,
+    "skipUserManagement": true
+  }
+}
