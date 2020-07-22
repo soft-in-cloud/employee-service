@@ -1,0 +1,34 @@
+entity Employee (employee) {
+  firstName String required maxlength(255),
+  lastName String required maxlength(255),
+  age Integer required min(1) max(200),
+  PESEL String required pattern(/[0-9]{11}/),
+  role Role required
+}
+
+entity Address (address) {
+    addressType AddressType required,
+    street String required maxlength(500),
+    postalCode String required maxlength(50),
+    city String required maxlength(100),
+    country String required maxlength(100),
+    stateProvince String maxlength(100),
+    buildingNumber String maxlength(20),
+    flatNumber String maxlength(20)
+}
+
+enum Role {
+    EMPLOYEE, MANAGER, CEO, DIRECTOR
+}
+
+enum AddressType {
+    REGISTERED_ADDRESS, HOME_ADDRESS
+}
+
+relationship OneToMany {
+    Employee to Address{employee}
+}
+
+dto * with mapstruct
+paginate * with pagination
+service * with serviceClass

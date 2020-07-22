@@ -1,7 +1,7 @@
 version: '2'
 services:
   employeeservice-app:
-    image: employeeservice
+    image: gracz/employee-service:latest
     environment:
       - _JAVA_OPTIONS=-Xmx512m -Xms256m
       - SPRING_PROFILES_ACTIVE=prod,swagger
